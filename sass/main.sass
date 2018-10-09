@@ -1,0 +1,530 @@
+@import "vars"
+@import "mixin"
+@import "fonts"
+@import "libs"
+@import "animate.css"
+@import "slick.css"
+
+button
+	transition: 0.3s all
+	cursor: pointer
+
+
+.header
+	background: url(../img/bg.jpg) no-repeat
+	width: 100%
+	height: 800px
+	-webkit-background-size: cover
+	background-size: cover
+	align-items: center
+	position: relative
+	background-position: 78%
+.menu
+	padding: 20px 0
+	margin: 0
+	align-items: center
+	width: 100%
+	background-color: rgba(0, 0, 0, 0.7019607843137254)
+	position: fixed
+	z-index: 100
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+.hamburg
+	width: 32px
+	height: 30px
+	border: none
+	background-color: transparent
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	outline: none !important
+	padding: 0
+	display: none
+	&:hover
+		background-color: transparent
+	&:hover + nav
+		display: block
+	span
+		height: 3px
+		width: 32px
+		border-radius: 1em
+		display: block
+		background: white
+		z-index: 3
+.navmenu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding: 0
+	margin: 0
+	align-items: center
+	justify-content: space-between
+	li
+		list-style-type: none
+		margin-right: 22px
+		a 
+			text-align: center
+			color: #fff
+		&:last-child
+			margin-right: 0
+	button.callbtn
+		background-color: #E60F11
+		border: none
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		padding-left: 30px
+		padding-right: 30px
+		padding-top: 8px
+		padding-bottom: 8px
+		color: white
+		&:hover
+			background: #9e0103
+	nav
+		margin-right: 15px	
+.mobmenu 
+	display: none
+.title
+	text-align: center
+	margin: auto
+	z-index: 4
+	position: relative
+	font-family: GothamPro
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	h1
+		font-size: 42px
+		text-transform: uppercase
+		color: #fff
+		z-index: 2
+		margin-top: 132px
+		margin-bottom: 	
+	h2
+		font-size: 32px
+		text-transform: uppercase
+		color: #fff
+		padding-bottom: 20px
+		z-index: 2
+
+button.red
+	background-color: #0009
+	border: none
+	font-size: 18px
+	font-weight: bold
+	text-transform: uppercase
+	padding-left: 40px
+	padding-right: 40px
+	padding-top: 10px
+	padding-bottom: 10px
+	z-index: 2
+	color: white
+	cursor: pointer
+button:hover
+	background-color: #E60F11
+.header:before
+	width: 100%
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: black
+	opacity: 0.3
+	position: absolute
+	content: ""
+	z-index: 3
+#service
+	text-align: right
+.service-img
+	width: 100%
+	height: 100%
+.wrp-service
+	margin-top: 28px
+	margin-bottom: 12px
+	img 
+		width: 50px
+		height: 50px
+		display: block
+		margin: 0 auto
+	h3
+		font-family: arial
+		font-size: 48px
+		text-transform: uppercase
+	h4
+		font-family: arial
+		font-size: 28px
+.icons
+	margin-top: 64px
+	padding-bottom: 12px
+	p
+		text-align: center
+.main-text
+		margin-top: 52px
+		text-align: right
+#tech
+	text-align: left
+	
+.wrp-tech
+	margin-top: 64px
+	margin-bottom: 12px
+	align-items: left
+	h3
+		font-family: arial
+		font-size: 48px
+		text-transform: uppercase
+	h4
+		font-family: arial
+		font-size: 28px 
+		margin-bottom: 50px
+	hr 
+		width: 720px
+		margin-left: 0
+		margin-bottom: 64px
+.flexrow
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+.wrp-col
+	background-color: rgba(black, 0.57)
+	// margin-right: 32px
+	// margin-bottom: 32px
+	text-align: center
+	position: relative
+	img
+		width: 100%
+		height: 314px
+		object-fit: cover
+	h3
+		font-size: 28px
+		text-transform: uppercase
+		color: white
+		padding: 16px
+	h4
+		font-size: 16px
+		text-transform: uppercase
+		color: white
+		padding: 20px
+#afterbefore
+	text-align: right
+	p 
+		color: #E60F11
+		text-transform: uppercase
+		font-weight: bold
+		text-align: center
+		font-family: Arial
+		padding-top: 64px
+.wrp-afterbefore
+	margin-top: 64px
+	margin-bottom: 12px
+	align-items: left
+	h3
+		font-family: arial
+		font-size: 48px
+		text-transform: uppercase
+	h4
+		font-family: arial
+		font-size: 28px
+		margin-bottom: 50px
+	hr 
+		width: 940px
+		margin-right: 0
+		margin-bottom: 64px
+div#comparison  
+  width: 100%
+  height: 800px
+  max-width: 707px
+  max-height: 471px
+  overflow: hidden 
+  margin: 0 auto
+  display: block
+div#comparison figure  
+  background-image: url(../img/after.png) 
+  position: relative
+  font-size: 0
+  width: 100% 
+  height: 100%
+  margin: 0 
+  background-size: cover
+
+div#comparison figure > img  
+  position: relative
+  width: 100%
+
+div#comparison figure div  
+  background-image: url(../img/before.png)
+  background-size: cover
+  position: absolute
+  width: 50% 
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3)
+  overflow: hidden
+  bottom: 0
+  height: 100%
+
+
+input[type=range]
+  -webkit-appearance:none
+  -moz-appearance:none
+  position: relative
+  top: -2rem 
+  left: 0
+  background-color: rgba(255,255,255,0.1)
+  width: 100% 
+
+input[type=range]:focus  
+  outline: none 
+
+input[type=range]:active  
+  outline: none  
+
+
+input[type=range]::-moz-range-track  
+  -moz-appearance:none
+    height: 15px
+    width: 98%
+    background-color: rgba(255,255,255,0.1) 
+    position: relative
+    outline: none    
+ 
+input[type=range]::active  
+  border: none 
+  outline: none
+
+input[type=range]::-webkit-slider-thumb 
+    -webkit-appearance:none
+    width: 20px 
+    height: 15px   
+    background: #fff
+    border-radius: 0
+   
+input[type=range]::-moz-range-thumb 
+  -moz-appearance: none
+  width: 20px
+  height: 15px
+  background: #fff
+  border-radius: 0
+        
+input[type=range]:focus::-webkit-slider-thumb 
+    background: rgba(255,255,255,0.5)
+   
+input[type=range]:focus::-moz-range-thumb 
+    background: rgba(255,255,255,0.5)
+   
+#discount
+	background: url(../img/dic.jpg)
+	text-align: center
+	background-size: cover
+	background-position: center
+	margin-top: 64px
+	// margin-bottom: 64px
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(black, 0.72)
+		z-index: 1
+	.container
+		position: relative
+		z-index: 3
+.wrp-discount
+	font-weight: bold
+	color: white
+	h3
+		font-family: arial
+		font-size: 48px
+		text-transform: uppercase
+		&:after
+			content: ''
+			width: 50%
+			height: 1px
+			background: #fff
+			display: block
+			margin: 0 auto
+	h4
+		font-family: arial
+		font-size: 28px 
+		text-transform: uppercase
+	    margin-bottom: 22px
+	button
+		background-color: #E60F11
+		border: none
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		padding-left: 30px
+		padding-right: 30px
+		padding-top: 8px
+		padding-bottom: 8px
+		color: white
+.flexrow2
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+.col-disc
+	padding: 150px 0
+	img
+		width: 145px
+	button:hover
+		background: #9e0103
+#customers
+	padding: 50px 0
+.wrp-customers
+	text-align: center
+	h3
+		font-family: arial
+		font-size: 48px
+		text-transform: uppercase
+	h4
+		font-family: arial
+		font-size: 28px 
+	hr 
+		width: 720px
+		margin-bottom: 64px
+.slider
+	.item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+
+		flex-direction: column
+
+		justify-content: space-between
+		align-items: center
+		img
+			display: block
+			width: 200px
+			height: 200px
+			object-fit: cover
+			object-position: center
+			margin-bottom: 32px
+		h4
+			margin-bottom: 32px
+		p
+			text-align: center
+			max-width: 584px
+
+.slick-arrow
+	position: absolute
+	background: url('../img/svg/arr.svg') no-repeat 
+	background-size: cover
+	background-position: center
+	border: none
+	height: 50px
+	width: 50px
+	z-index: 33
+	top: calc(25% - 25px)
+	cursor: pointer
+	outline: none!important
+	&:hover
+		background-color: transparent
+.slick-next
+	right: 206px
+.slick-prev
+	left: 206px
+	transform: scaleX(-1)
+.footer
+	background-color: #6D6D6D
+	padding: 35px
+.flexrow3
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	text-align: center
+	img
+		width: 24px
+		height: 24px
+	.col-footer
+		a
+			color: white
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				margin-bottom: 15px
+				img
+					margin-right: 5px
+					width: 24px
+					height: 24px
+.wrp-logo
+	a
+		text-decoration: none !important
+	p
+		color: white
+	span
+		font-size: 30px
+		color: white
+
+
+.grid
+	display: grid
+	grid-template-columns: repeat(auto-fill, 48.8%)
+	grid-gap: 25px
+	align-items: center
+	.wrp-col
+		min-width: 300px
+		height: 100%
+.phones
+	margin: 0 10px 0 5px
+	color: white
+	text-decoration: none !important
+	&:hover
+		color: white
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		background: white
+		height: 1px
+		transform: scaleX(0)
+		transition: 0.3s all
+	&:hover:after
+		transform: scaleX(1)
+
+.baner
+	margin-top: 100px
+.banerEra111
+	width: 100%
+	height: 100%
+	object-fit: cover
+	object-position: center
+.demo
+	font-size: 40px
+	color: #e60f11
+	font-weight: bold
+	margin-bottom: 80px
+@import "media"
